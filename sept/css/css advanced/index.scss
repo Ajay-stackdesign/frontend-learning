@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgba(54, 63, 63, 0.082);
+}
+h1{
+    position: relative;
+    left: 4rem;
+    top: 8rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-variant: small-caps;
+}
+img{
+    width: 15rem;
+}
+.one img{
+    height: 25rem;
+    width: 40rem;
+}
+.two img{
+    height: 25vh;
+    position: relative;
+    left: 20rem;
+    bottom: 15rem;
+    background-size:contain;
+}
+#box{
+    p{
+        position: relative;
+        bottom: 150px;
+        border: 2px solid black;
+        text-align: center;
+        //background-color: transparent;
+        height: 200px;
+        //background: linear-gradient(to leftb  ,rgb(238, 5, 5),rgb(250, 250, 2),black,blue,white,crimson);
+        background: repeating-linear-gradient(to right,red,rgb(243, 243, 3) 10%,green 20%);
+    }
+}
+#box1{
+    p{
+        position: relative;
+        left: 0px;
+        bottom: 120px;
+        height: 100px;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        //background: radial-gradient(farthest-side at 50% 50%, red 50%,rgb(18, 117, 18) 75%);
+        background: repeating-radial-gradient(rgb(170, 100, 250) ,rgba(0, 0, 0, 0) 9%,rgb(128, 0, 0) 15%);
+    }
+}
+#box2{
+    position: relative;
+    left: 0px;
+    bottom: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background: burlywood;
+    box-shadow: 7px 7px 12px black inset;//12px 12px 10px red;
+    text-shadow: 5px 5px red;
+}
+#ramp{
+    p{
+       width: 100px;
+       border: 2px solid black; 
+       height: 100px;
+       position: relative;
+       left: 0px;
+       bottom: 70px;
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       &:hover{
+           overflow: visible;
+       }
+    }
+}
+#box4{
+    p{
+        font-family: 'Oswald', sans-serif;
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        border-radius: 50%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: rgb(170, 100, 250);opacity: 0.8;
+    }
+}
+#box5{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    //transform: translate(50px,100px);
+    //transform: rotate(120deg);
+    transition: 4s;
+    //transform: skew(14deg,12deg);
+    //transform: rotateX(360deg);
+    //transform: rotateZ( 0deg);
+    /*&:hover{
+        transform: skew(180deg,180deg);
+    }*/
+    //transform: ;
+}
+#box6{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 2px solid black;
+    transform: translate(30px);
+    p{
+        width: 200px;
+        height: 200px;
+        background-color: blue; 
+        transform-origin: left bottom;
+        transform: perspective(800px) rotateX(5deg);
+
+    }
+}

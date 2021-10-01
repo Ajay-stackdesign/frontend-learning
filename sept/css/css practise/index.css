@@ -49,10 +49,9 @@ p::marker {
   color: blue;
 }
 
-input[type] {
-  border: 2px solid #a80909;
-}
-
+/*input[type]{
+    border: 2px solid rgb(168, 9, 9);
+}*/
 input[type="username"] {
   border: 2px solid #a80909;
 }
