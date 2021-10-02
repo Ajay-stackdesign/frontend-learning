@@ -122,3 +122,125 @@ img{
 
     }
 }
+#box7{
+    margin-top: 20px;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    //transition-duration: 2s;
+    //transition-timing-function: ease-in-out;
+    transition: width 2s,width 2s,transform 2s;
+    &:hover{
+        width: 300px;
+        height: 300px;
+        color: white;
+        transform: rotate(360deg);
+    }
+    p{
+        background: red;
+    }
+}
+#box8{
+    margin-top: 30px;
+    background-color: rgb(170, 100, 250);
+    width: 200px;
+    height: 200px;
+    animation-name: coding;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: reverse;
+}
+.res{
+    margin-top: 30px;
+    height: 300px;
+    width: 200px;
+    img{
+        -webkit-box-reflect: below 20px linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.9));
+        
+    }
+}
+.two{
+    img{
+        width: 300px;
+        height: 300px;
+        //object-fit: contain;
+        object-fit: cover;
+        //object-fit: none;
+        object-position: 5%;
+    }
+}
+.boxes{
+    padding: 20px;
+    a{
+        padding: 20px;
+        font-size: 20px;
+        text-decoration: none;
+        color: red;
+        &:hover{
+            background-color: rgb(243, 243, 3);
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+    }
+}
+.abc{
+    column-count: 3;
+    column-gap: 10px;
+    //column-rule-style: solid;
+    //column-rule-width: 5px;
+    //column-rule-color: blue;
+    column-rule: 2px solid red;
+    //column-span: all;
+    //column-width: 100px;
+}
+.xyz{
+    margin-top: 20px;
+    background: red;
+    color: white;
+    overflow: scroll;
+    resize: both;
+    position: relative;
+    bottom: 300px;
+    outline-offset: 15px;
+
+}
+.deb{
+    background: blue;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+main{
+    background-color: brown;
+    height: 250px;
+    #content{
+        display: flex;
+        //justify-content: space-around;
+        //align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        //flex-wrap: wrap-reverse;
+        .res1{
+            margin-top: 22px;
+            background-color:rgb(35, 122, 23);
+            padding: 20px;
+            width: 80px;
+            text-align: center;
+        }
+    }
+}
+
+@keyframes coding {
+    from{
+        width: 200px;
+    }
+    to{
+        width: 800px;
+    }
+    
+}
+@media screen and (min-width:200px) and (max-width:500px) {
+    .deb{
+        background: brown;
+    }
+    
+}

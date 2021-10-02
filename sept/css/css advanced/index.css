@@ -124,4 +124,152 @@ img {
   -webkit-transform: perspective(800px) rotateX(5deg);
           transform: perspective(800px) rotateX(5deg);
 }
+
+#box7 {
+  margin-top: 20px;
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  -webkit-transition: width 2s,width 2s,-webkit-transform 2s;
+  transition: width 2s,width 2s,-webkit-transform 2s;
+  transition: width 2s,width 2s,transform 2s;
+  transition: width 2s,width 2s,transform 2s,-webkit-transform 2s;
+}
+
+#box7:hover {
+  width: 300px;
+  height: 300px;
+  color: white;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#box7 p {
+  background: red;
+}
+
+#box8 {
+  margin-top: 30px;
+  background-color: #aa64fa;
+  width: 200px;
+  height: 200px;
+  -webkit-animation-name: coding;
+          animation-name: coding;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  animation-direction: reverse;
+}
+
+.res {
+  margin-top: 30px;
+  height: 300px;
+  width: 200px;
+}
+
+.res img {
+  -webkit-box-reflect: below 20px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+
+.two img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5%;
+     object-position: 5%;
+}
+
+.boxes {
+  padding: 20px;
+}
+
+.boxes a {
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: red;
+}
+
+.boxes a:hover {
+  background-color: #f3f303;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.abc {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-column-rule: 2px solid red;
+          column-rule: 2px solid red;
+}
+
+.xyz {
+  margin-top: 20px;
+  background: red;
+  color: white;
+  overflow: scroll;
+  resize: both;
+  position: relative;
+  bottom: 300px;
+  outline-offset: 15px;
+}
+
+.deb {
+  background: blue;
+  font-size: 30px;
+  font-variant: small-caps;
+}
+
+main {
+  background-color: brown;
+  height: 250px;
+}
+
+main #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #content .res1 {
+  margin-top: 22px;
+  background-color: #237a17;
+  padding: 20px;
+  width: 80px;
+  text-align: center;
+}
+
+@-webkit-keyframes coding {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 800px;
+  }
+}
+
+@keyframes coding {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  .deb {
+    background: brown;
+  }
+}
 /*# sourceMappingURL=index.css.map */
